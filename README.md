@@ -138,8 +138,6 @@ birth-plan-manager/
   ├── MothersCollection.py
   ├── Schedule.py
   └── Time.py
-├── constants.py
-├── main.py
 ├── testSets/
   ├── testSet1/
     ├── doctors10h00.txt
@@ -158,4 +156,6 @@ birth-plan-manager/
     ├── requests18h30.txt
     └── schedule18h00.txt
 ├── LICENSE
-└── README.md
+├── README.md
+├── constants.py
+└── main.py
