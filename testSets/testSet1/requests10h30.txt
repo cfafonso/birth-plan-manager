@@ -1,0 +1,10 @@
+Organization:
+SmartMaternityCare
+Time:
+10h30
+Date: 
+10:12:2023
+Mothers:
+Barbara Brooks, 28, green, high
+Catherine Anderson, 30, red, low
+Alice Carter, 35, green, high

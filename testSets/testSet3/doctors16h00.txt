@@ -1,0 +1,9 @@
+﻿Organization:
+SmartMaternityCare
+Time:
+16h00
+Date:
+10:12:2023
+Doctors:
+Michael Owen, 3, 16h30, 120, 39h40
+Oliver Osborne, 3, 16h40, 80, 39h20

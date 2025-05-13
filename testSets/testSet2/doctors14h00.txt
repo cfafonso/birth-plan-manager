@@ -1,0 +1,11 @@
+﻿Organization:
+SmartMaternityCare
+Time:
+14h00
+Date:
+10:12:2023
+Doctors:
+George Jenkins, 2, 14h20, 40, 39h50
+Henry Grant, 3, 14h20, 120, 7h20
+Ian Gardner, 2, 14h20, 40, 39h50
+James Hamilton, 2, 14h20, 40, 15h00

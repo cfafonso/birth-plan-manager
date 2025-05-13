@@ -1,0 +1,11 @@
+﻿Organization:
+SmartMaternityCare
+Time:
+18h00
+Date:
+10:12:2023
+Doctors:
+Andrew Davies, 1, 18h20, 180, 28h00
+Brian Cooper, 3, 18h10, 80, 7h20
+Charles Baker, 2, 17h50, 120, 32h00
+David Adams, 3, 18h40, 270, 15h00
