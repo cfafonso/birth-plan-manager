@@ -87,6 +87,7 @@ Example of an assistance: 9h50, Mary Evans, Brian Cooper
 ### Output Files
 
 #### Header
+
 The output file header matches the input file header, updated by 30 minutes.
 
 #### Schedule
@@ -100,11 +101,11 @@ In the schedule output file, entries are ordered by ascending starting times. Fo
 The doctors output file has a similar structure to its input file. The differences are (1) the header time is updated (30 minutes added from input file time), and (2) for the doctors that were part of an assistance, three fields are updated: daily availability for a new assistance, accumulated minutes since the start of the day and accumulated hours and minutes since the last weekly rest.
 
 
-### Assigment of requests to doctors
+### Assignment of requests to doctors
 
 #### Requests
-Requests must be assigned to doctors based on their earliest availability, prioritizing mothers in more urgent circumstances. The mother who is first sought for assistance will be the one with the highest risk. In case of a tie, it's the mother with the most urgent wristband color. If still tied, it's the older mother. If still tied, it's the one whose name comes first alphabetically.
 
+Requests must be assigned to doctors based on their earliest availability, prioritizing mothers in more urgent circumstances. The mother who is first sought for assistance will be the one with the highest risk. In case of a tie, it's the mother with the most urgent wristband color. If still tied, it's the older mother. If still tied, it's the one whose name comes first alphabetically.
 
 #### Doctors
 The doctor assigned to an assistance will be the one available first, considering that only doctors of category 2 or higher can assist in high-risk deliveries. In case of a tie, it's the doctor with the highest category. If still tied, it's the doctor with the longest time remaining before having to take a break. If still tied, it's the one whose name comes first alphabetically.
