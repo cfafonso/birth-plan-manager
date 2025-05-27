@@ -7,29 +7,22 @@ This is a command-line tool in object-oriented python that manages childbirth as
 - Python 3.x
 
 
-## Usage
+## Installation
 
-1. Place the required input files contained within the `testSets` folder inside the `birthPlan` folder. For instance, in the case of `testSet1`, these would be:
-  - The `doctors10h00.txt`
-  - The `schedule10h00.txt`
-  - The `requests10h30.txt`
+### 1. Clone or download the repository
 
-2. Run the tool by using the following command line instruction:  
-   python main.py inputFile1.txt inputFile2.txt inputFile3.txt
+```git clone https://github.com/cfafonso/birth-plan-manager.git```
 
-   where:
-   - inputFile1.txt is a `doctors` text file such as `doctors10h00.txt`
-   - inputFile2.txt is a `schedule` text file such as `schedule10h00.txt`
-   - inputFile3.txt is a `requests` text file such as `requests10h30.txt`
+### 2. Usage
 
-   These input files can be found within the folder `testSets`.
+- Place the required input files contained within the `testSets` folder inside the `birthPlan` folder. For instance, in the case of `testSet1`, these would be `doctors10h00.txt`, `schedule10h00.txt` and `requests10h30.txt`.
 
-3. The tool will produce two new text files, incremented by 30 minutes relative to the time in the input file. In the case of the input files above, the ouput files would be:
-  - `doctors10h30.txt`
-  - `schedule10h30.txt`
+- Run the tool by using the following command line instruction:
+   ```python main.py inputFile1.txt inputFile2.txt inputFile3.txt```
 
-   Running the tool with the input files in `testSets\testSet4` will raise an exception due to file name and header inconsistency in the file `requests18h30.txt`.
+  `inputFile1.txt` is a doctors text file such as `doctors10h00.txt`, `inputFile2.txt` is a schedule text file such as `schedule10h00.txt`, and `inputFile3.txt` is a requests text file such as `requests10h30.txt`. These input files can be found within the folder `testSets`.
 
+- The tool will produce two new text files, incremented by 30 minutes relative to the time in the input files. In the case of the input files above, the ouput files would be `doctors10h30.txt` and `schedule10h30.txt`. Running the tool with the input files in `testSets\testSet4` will raise an exception due to file name and header inconsistency in the file `requests18h30.txt`.
 
 ## Specification of the Project
 
@@ -83,7 +76,6 @@ Each assistance is characterized by:
 
 Example of an assistance: 9h50, Mary Evans, Brian Cooper
 
-
 ### Output Files
 
 #### Header
@@ -100,7 +92,6 @@ In the schedule output file, entries are ordered by ascending starting times. Fo
 
 The doctors output file has a similar structure to its input file. The differences are (1) the header time is updated (30 minutes added from input file time), and (2) for the doctors that were part of an assistance, three fields are updated: daily availability for a new assistance, accumulated minutes since the start of the day and accumulated hours and minutes since the last weekly rest.
 
-
 ### Assignment of requests to doctors
 
 #### Requests
@@ -113,7 +104,6 @@ The doctor assigned to an assistance will be the one available first, considerin
 This assignment continues until reaching the maximum accumulated hours that doctor can work without weekly rest, or exceeding this limit only to finish a last service that began before reaching this limit. Otherwise, that assistance must be assigned to another doctor. If there is no other doctor able to perform it, that assistance must be redicted to another hospital network.
 
 Assignments are made as long as assistances do not extend beyond 20h00 of that day. If it extends beyond that time, the assistance is redirected to another hospital network. Redirected assistances to another hospital network are shown as ``HHhMM, mother's name, redirected to other network``, where HHhMM is the scheduling update time. If multiple such cases exist at the same HHhMM, lines are ordered by the mothers' priority rules.
-
 
 ### Exception
 
